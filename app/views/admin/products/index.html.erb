@@ -5,7 +5,7 @@
   <thead>
     <tr>
       <th>商品</th>
-      <th>描述</th>
+      <th>详情</th>
       <th>价格</th>
       <th>库存</th>
       <th>操作</th>
@@ -14,8 +14,17 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= link_to(product.title, admin_product_path(product)) %></td>
-        <td><%= product.description %></td>
+        <td>
+          <div class="col-md-6">
+            <%= image_tag(product.image.thumb.url, class:"thumbnail") %>
+          </div>
+          <div class="col-md-6">
+            <%= link_to(product.title, admin_product_path(product)) %>
+          </div>
+        </td>
+        <td>
+          <%= product.description %>
+        </td>
         <td><%= product.price %></td>
         <td><%= product.quantity %></td>
         <td>
