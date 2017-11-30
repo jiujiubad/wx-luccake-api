@@ -24,7 +24,9 @@
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="#">jmeter</a></li>
+						<% if current_user && current_user.is_admin %>
+							<li><a href="/admin/products">Admin</a></li>
+						<% end %>
 						<li><a href="#">EJB</a></li>
 						<li class="divider"></li>
 						<li><%= link_to(content_tag(:i, '退出', class:"fa fa-sign-out"), destroy_user_session_path, method: :delete) %></li>
