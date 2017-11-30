@@ -1,0 +1,41 @@
+<h2>购物车</h2>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>商品信息</th>
+      <th>单价</th>
+      <th>数量</th>
+      <th>金额</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% current_cart.cart_items.each do |cart_item| %>
+      <tr>
+        <td>
+          <%= image_tag(cart_item.product.image.thumb.url) %>
+          <%= cart_item.product.title %>
+        </td>
+        <td><%= cart_item.product.price %></td>
+        <td><%= cart_item.quantity %></td>
+        <td>
+          <% sum1 = cart_item.product.price * cart_item.quantity %>
+          <%= sum1 %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="clearfix">
+  <h2 class="pull-right">
+    合计
+    <%= render_cart_total_price(current_cart) %>
+     元
+  </h2>
+</div>
+
+<hr/>
+
+<%= link_to("结算", "#", class:"btn btn-danger btn-lg pull-right") %>
