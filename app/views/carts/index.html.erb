@@ -1,5 +1,5 @@
 <h2>购物车</h2>
-<%= link_to("清空购物车", clean_carts_path, method: :delete, class:"btn btn-danger btn-sm pull-right", data:{confirm:"确认清空？"}) %>
+<%= link_to("清空购物车", clean_carts_path, method: :delete, class:"btn btn-info btn-sm pull-right", data:{confirm:"确认清空？"}) %>
 
 <table class="table table-bordered">
   <thead>
@@ -23,6 +23,9 @@
         <td>
           <% sum1 = cart_item.product.price * cart_item.quantity %>
           <%= sum1 %>
+        </td>
+        <td>
+          <%= link_to("删除", cart_item_path(cart_item.product_id), method: :delete) %>
         </td>
       </tr>
     <% end %>
