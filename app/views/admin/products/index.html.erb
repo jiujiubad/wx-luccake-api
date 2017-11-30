@@ -1,5 +1,5 @@
-<h2>所有商品</h2>
-<%= link_to("新增商品", new_admin_product_path, class:"btn btn-success btn-sm") %>
+
+<%= link_to("新增商品", new_admin_product_path, class:"btn btn-success btn-lg") %>
 
 <table class="table table-bordered">
   <thead>
@@ -16,7 +16,11 @@
       <tr>
         <td>
           <div class="col-md-6">
-            <%= image_tag(product.image.thumb.url, class:"thumbnail") %>
+            <% if product.image.present? %>
+              <%= image_tag(product.image.thumb.url, class:"thumbnail") %>
+            <% else %>
+              <%= image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
+            <% end %>
           </div>
           <div class="col-md-6">
             <%= link_to(product.title, admin_product_path(product)) %>

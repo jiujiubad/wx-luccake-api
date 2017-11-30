@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jdstore1130</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <%= render "common/navbar" %>
+        <%= render "common/flashes" %>
+        <div class="col-md-2">
+          <%= link_to("所有商品", admin_products_path, class:"btn btn-info btn-lg btn-block") %>
+        </div>
+        <div class="col-md-10">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+
+
+    <%= render "common/footer" %>
+  </body>
+</html>
