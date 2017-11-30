@@ -1,0 +1,28 @@
+<h2>所有商品</h2>
+<%= link_to("新增商品", new_admin_product_path, class:"btn btn-success btn-sm") %>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>商品</th>
+      <th>描述</th>
+      <th>价格</th>
+      <th>库存</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= link_to(product.title, admin_product_path(product)) %></td>
+        <td><%= product.description %></td>
+        <td><%= product.price %></td>
+        <td><%= product.quantity %></td>
+        <td>
+          <%= link_to("编辑", edit_admin_product_path(product), class:"btn btn-info btn-xs") %>
+          <%= link_to("删除", admin_product_path(product), method: :delete, class:"btn btn-danger btn-xs", data:{confirm:"确认删除？"}) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
