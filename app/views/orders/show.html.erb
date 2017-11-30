@@ -38,3 +38,10 @@
     <%= @order.shipping_name %> - <%= @order.shipping_address %>
   </div>
 </div>
+
+<% if !@order.is_paid? %>
+  <%= link_to("微信付款", pay_with_wechat_order_path, method: :post, class:"btn btn-info btn-lg pull-right") %>
+  <%= link_to("支付宝付款", pay_with_alipay_order_path, method: :post, class:"btn btn-info btn-lg pull-right") %>
+<% else %>
+  <h3>此订单已付款</h3>
+<% end %>
