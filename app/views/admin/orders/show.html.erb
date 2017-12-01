@@ -1,0 +1,47 @@
+<h2>商品信息(<%= render_order_paid_state(@order) %>)</h2>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>商品信息</th>
+      <th>单价</th>
+      <th>数量</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @product_lists.each do |product_list| %>
+      <tr>
+        <td><%= product_list.product_name %></td>
+        <td><%= product_list.product_price %></td>
+        <td><%= product_list.quantity %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="clearfix">
+  <h2 class="pull-right">
+    合计 <%= @order.total %> 元
+  </h2>
+</div>
+
+<h2>订单信息</h2>
+<div class="panel panel-default">
+  <div class="panel-heading">订购人</div>
+  <div class="panel-body">
+    <%= @order.billing_name %> - <%= @order.billing_address %>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">收件人</div>
+  <div class="panel-body">
+    <%= @order.shipping_name %> - <%= @order.shipping_address %>
+  </div>
+</div>
+
+<% if !@order.is_paid? %>
+  <%= link_to("微信付款", pay_with_wechat_order_path, method: :post, class:"btn btn-info btn-lg pull-right") %>
+  <%= link_to("支付宝付款", pay_with_alipay_order_path, method: :post, class:"btn btn-info btn-lg pull-right") %>
+<% else %>
+  <h3>此订单已付款</h3>
+<% end %>
