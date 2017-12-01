@@ -19,7 +19,7 @@ class OrdersController < ApplicationController
         product_list.save
       end
       current_cart.clean!
-      OrderMailer.notify_placed(@order).deliver!
+      OrderMailer.mailer_order_placed(@order).deliver!
       redirect_to order_path(@order.token)
     else
       render "carts/checkout"
@@ -40,6 +40,13 @@ class OrdersController < ApplicationController
     @order.make_payment!
     redirect_to :back
     flash[:notice] = "支付宝支付成功"
+  end
+
+  def apply_to_cancel
+    @order = Order.find_by_token(params[:id])
+    OrderMailer.mailer_apply_cancel(@order).deliver!
+    flash[:notice] = "已提交申请"
+    redirect_to :back
   end
 
   private
