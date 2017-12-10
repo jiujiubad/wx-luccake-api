@@ -1,5 +1,5 @@
 <h2>商品信息(<%= render_order_paid_state(@order) %>)</h2>
-<%= render "state_option" %>
+<%= render "admin/orders/state_option", order: @order %>
 
 <table class="table table-bordered">
   <thead>

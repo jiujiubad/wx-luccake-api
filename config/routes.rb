@@ -12,10 +12,10 @@ Rails.application.routes.draw do
     resources :products
     resources :orders do
       member do
-        post :ship_prepare
-        post :ship
-        post :return
         post :cancel
+        post :ship
+        post :shipped
+        post :return
       end
     end
   end
