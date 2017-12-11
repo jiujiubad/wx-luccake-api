@@ -23,3 +23,27 @@
   float: none;
   margin: 0 auto;
 }
+
+/*==== 【welcome#index】 ====*/
+/*==== intro 轮播图 ====*/
+.intro-box {
+  .item {
+    h3 {
+      margin-top: -40%;
+      font-size: 50px;
+      letter-spacing: 5px;
+    }
+    p {
+      font-size: 20px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .carousel-control {
+    i {
+      margin-top: 140%; //按钮高度
+      font-size: 50px; //按钮大小
+    }
+  }
+}

@@ -1,1 +1,56 @@
-<h1>Hello World!</h1>
+<div class="welcome-index-box">
+  <section class="intro-box">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="myCarousel" class="carousel slide">
+        	<!--==== 轮播（Carousel）指标 ====-->
+        	<ol class="carousel-indicators">
+        		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        		<li data-target="#myCarousel" data-slide-to="1"></li>
+        		<li data-target="#myCarousel" data-slide-to="2"></li>
+        	</ol>
+        	<!--==== 轮播（Carousel）项目 ====-->
+        	<div class="carousel-inner">
+        		<div class="item active">
+              <%= link_to "#", target:"_blank" do %>
+        			  <%= image_tag("intro_1") %>
+                <div class="carousel-caption">
+                  <h3>品味生活</h3>
+                  <p>打造优质烹饪环境，让生活更有趣</p>
+                </div>
+              <% end %>
+        		</div>
+        		<div class="item">
+              <%= link_to "#", target:"_blank" do %>
+        			  <%= image_tag("intro_2") %>
+                <div class="carousel-caption">
+                  <h3>创造美食</h3>
+                  <p>最新创意食谱，每天都充满变化</p>
+                </div>
+              <% end %>
+        		</div>
+        		<div class="item">
+              <%= link_to "#", target:"_blank" do %>
+        			  <%= image_tag("intro_3") %>
+                <div class="carousel-caption">
+                  <h3>精选厨具</h3>
+                  <p>打优质进口厨具，做菜更加便利</p>
+                </div>
+              <% end %>
+        		</div>
+        	</div>
+        	<!--==== 轮播（Carousel）导航 ====-->
+        	<a class="carousel-control left" href="#myCarousel"
+        	   data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </a>
+
+        	<a class="carousel-control right" href="#myCarousel"
+        	   data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
