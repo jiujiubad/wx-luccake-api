@@ -3,7 +3,7 @@
   <section class="intro-box">
     <div class="row">
       <div class="col-md-12">
-        <div id="myCarousel" class="carousel slide">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
         	<!--==== 轮播指标 ====-->
         	<ol class="carousel-indicators">
         		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -161,8 +161,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_1.jpg") %>
               </div>
-              <h6>两手锅</h6>
-              <p>$550</p>
+              <p class="p1">两手锅</p>
+              <p class="p2">$550</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -170,8 +170,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_2.jpg") %>
               </div>
-              <h6>平底锅</h6>
-              <p>$750</p>
+              <p class="p1">平底锅</p>
+              <p class="p2">$750</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -179,8 +179,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_3.jpg") %>
               </div>
-              <h6>铁制茶壶</h6>
-              <p>$450</p>
+              <p class="p1">铁制茶壶</p>
+              <p class="p2">$450</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -188,8 +188,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_4.jpg") %>
               </div>
-              <h6>茶壶</h6>
-              <p>$250</p>
+              <p class="p1">茶壶</p>
+              <p class="p2">$250</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -197,8 +197,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_5.jpg") %>
               </div>
-              <h6>八角点心盘</h6>
-              <p>$150</p>
+              <p class="p1">八角点心盘</p>
+              <p class="p2">$150</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -206,8 +206,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_6.jpg") %>
               </div>
-              <h6>点心盘</h6>
-              <p>$80</p>
+              <p class="p1">点心盘</p>
+              <p class="p2">$80</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -215,8 +215,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_7.jpg") %>
               </div>
-              <h6>木盘</h6>
-              <p>$125</p>
+              <p class="p1">木盘</p>
+              <p class="p2">$125</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -224,8 +224,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_8.jpg") %>
               </div>
-              <h6>酱料碟</h6>
-              <p>$20</p>
+              <p class="p1">酱料碟</p>
+              <p class="p2">$20</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -233,8 +233,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_9.jpg") %>
               </div>
-              <h6>酱料碟</h6>
-              <p>$50</p>
+              <p class="p1">酱料碟</p>
+              <p class="p2">$50</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -242,8 +242,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_10.jpg") %>
               </div>
-              <h6>马克杯</h6>
-              <p>$80</p>
+              <p class="p1">马克杯</p>
+              <p class="p2">$80</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -251,8 +251,8 @@
               <div class="recommend-part1">
                 <%= image_tag("item_11.jpg") %>
               </div>
-              <h6>陶锅</h6>
-              <p>$650</p>
+              <p class="p1">陶锅</p>
+              <p class="p2">$650</p>
             <% end %>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
@@ -260,12 +260,49 @@
               <div class="recommend-part1">
                 <%= image_tag("item_12.jpg") %>
               </div>
-              <h6>8号锅</h6>
-              <p>$500</p>
+              <p class="p1">8号锅</p>
+              <p class="p2">$500</p>
             <% end %>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!--==== 用户反馈 ====-->
+  <section class="feedback-box">
+    <div class="row">
+      <div class="col-md-10 col-center">
+        <h2>用户反馈</h2>
+        <div class="short-line"></div>
+        <div id="feedback" class="carousel slide" data-ride="carousel">
+        	<!-- 轮播（Carousel）指标 -->
+        	<ol class="carousel-indicators">
+        		<li data-target="#feedback" data-slide-to="0" class="active"></li>
+        		<li data-target="#feedback" data-slide-to="1"></li>
+        		<li data-target="#feedback" data-slide-to="2"></li>
+        	</ol>
+        	<!-- 轮播（Carousel）项目 -->
+        	<div class="carousel-inner">
+        		<div class="item active">
+              <p class="p1">这是我用过最好的网站，商品众多、下单方便、送货快速，还能订制特殊规格的锅具，强力推荐。</p>
+              <%= image_tag("feedback_1.png") %>
+              <p class="p2">Eddie - 上班族</p>
+        		</div>
+        		<div class="item">
+              <p class="p1">我是这网站的忠实用户，已经在这买好几年了，质量一直很好，而且不定时会有折扣，真的很划算！</p>
+              <%= image_tag("feedback_2.png") %>
+              <p class="p2">Anna - 家庭主妇</p>
+        		</div>
+        		<div class="item">
+              <p class="p1">身为一个学生，预算不太多，却也能在这找到便宜又有设计感的器皿，让我生活又添加一份乐趣。</p>
+              <%= image_tag("feedback_3.png") %>
+              <p class="p2">Kobe - 大学生</p>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>

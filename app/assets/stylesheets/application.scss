@@ -156,12 +156,54 @@ body {
     .recommend-part1:hover {
       opacity: 0.6;
     }
-    h6 {
+    .p1 {
       font-size: 14px;
       margin-top: 30px;
     }
-    p {
+    .p2 {
       margin-bottom: 40px;
+    }
+  }
+}
+
+/*==== 用户反馈 ====*/
+.feedback-box {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  .item {
+    img {
+      width: 80px;
+      border-radius: 50%;
+      margin: 0 auto 25px auto;
+      border: 2px solid #ccc;
+    }
+    .p1 {
+      max-width: 550px;
+      margin: 0 auto 25px auto;
+    }
+    .p2 {
+      margin-top: 25px;
+    }
+  }
+  .carousel-indicators {
+    margin-bottom: -70px;
+    li {
+      background-color: #666;
+      height: 13px;
+      width: 13px;
+      margin: 0 5px;
+      border-radius: 0;
+
+      /* 按钮转向45度 */
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    li.active {
+      background-color: #0070DE;
     }
   }
 }
