@@ -170,7 +170,7 @@ body {
 .feedback-box {
   background-color: #fff;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
   .item {
     img {
       width: 80px;
@@ -205,5 +205,16 @@ body {
     li.active {
       background-color: #0070DE;
     }
+  }
+}
+
+/*==== 合作品牌 ====*/
+.brand-box {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 50px 0;
+  img {
+    width: 150px;
+    margin: 10px 15px;
   }
 }
