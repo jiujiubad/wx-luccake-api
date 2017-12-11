@@ -18,13 +18,28 @@
 @import "bootstrap";
 @import "font-awesome";
 
-//**-----------common------------**//
-.col-center{
-  float: none;
-  margin: 0 auto;
+/*==== Common ====*/
+body {
+  .col-center{
+    float: none;
+    margin: 0 auto;
+  }
 }
 
-/*==== 【welcome#index】 ====*/
+/*==== box-welcome ====*/
+.box-welcome {
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .short-line {
+    background-color: #0070DE;
+    margin: 15px auto 30px auto;
+    width: 150px;
+    height: 1.5px;
+  }
+}
+
 /*==== intro 轮播图 ====*/
 .intro-box {
   .item {
@@ -45,5 +60,29 @@
       margin-top: 140%; //按钮高度
       font-size: 50px; //按钮大小
     }
+  }
+}
+
+/*==== story 品牌故事 ====*/
+.story-box {
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 62.5px 50px 62.5px;//位置
+  h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+  p {
+    color: #333;
+    line-height: 24px;
+    text-align: justify;
+  }
+  img {
+    border-radius: 50%;
+    width: 150px;
+  }
+  hr {
+    background-color: #666;
+    height: 1.5px;
   }
 }

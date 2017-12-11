@@ -1,15 +1,16 @@
-<div class="welcome-index-box">
+<div class="box-welcome">
+  <!--==== 大图轮播 ====-->
   <section class="intro-box">
     <div class="row">
       <div class="col-md-12">
         <div id="myCarousel" class="carousel slide">
-        	<!--==== 轮播（Carousel）指标 ====-->
+        	<!--==== 轮播指标 ====-->
         	<ol class="carousel-indicators">
         		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         		<li data-target="#myCarousel" data-slide-to="1"></li>
         		<li data-target="#myCarousel" data-slide-to="2"></li>
         	</ol>
-        	<!--==== 轮播（Carousel）项目 ====-->
+        	<!--==== 轮播图片 ====-->
         	<div class="carousel-inner">
         		<div class="item active">
               <%= link_to "#", target:"_blank" do %>
@@ -39,7 +40,7 @@
               <% end %>
         		</div>
         	</div>
-        	<!--==== 轮播（Carousel）导航 ====-->
+        	<!--==== 换页按钮 ====-->
         	<a class="carousel-control left" href="#myCarousel"
         	   data-slide="prev">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -53,4 +54,36 @@
       </div>
     </div>
   </section>
+
+  <!--==== 品牌故事 ====-->
+  <section class="story-box">
+    <div class="row">
+      <div class="col-md-10 col-center">
+        <h2>品牌故事</h2>
+        <h1>JDStore</h1>
+        <div class="short-line"></div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <%= image_tag("founder_1.png") %>
+          </div>
+          <div class="col-md-7">
+            <h3>Victor</h3>
+            <p>我們希望能為大家帶來種類多樣、價格低廉並且設計獨特，且讓大多數人可以負擔的起的家具家飾品，爲了實現這樣的想法，我們從產品設計、原料採購、生產製造，到在分店中的經營，都不斷在創新和尋求改善。 </p>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-md-7 col-md-offset-1">
+            <h3>Kelly</h3>
+            <p>我們知道如果要提供顧客便宜、品質又好的商品，企業必須有效的管理成本及運用創新的製造方法，這是從未改變的信念，最有效的利用原料，尋找更經濟、更有效率及更有創意的製作或包裝方式，降低成本，回饋給大家! </p>
+          </div>
+          <div class="col-md-3">
+            <%= image_tag("founder_2.png") %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </div>
