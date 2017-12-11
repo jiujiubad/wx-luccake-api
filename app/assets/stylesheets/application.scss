@@ -73,7 +73,7 @@ body {
     text-align: left;
   }
   p {
-    color: #333;
+    color: #666;
     line-height: 24px;
     text-align: justify;
   }
@@ -84,5 +84,27 @@ body {
   hr {
     background-color: #666;
     height: 1.5px;
+  }
+}
+
+/*==== service 服务优势 ====*/
+.service-box {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 25px 62.5px 50px 62.5px;
+  .box-1 {
+    margin: 0 25px;
+    img {
+      width: 100px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      color: #666;
+      line-height: 24px;
+      text-align: justify;
+      margin-top: 25px;
+    }
   }
 }
