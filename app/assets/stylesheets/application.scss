@@ -17,9 +17,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/earlyaccess/notosanssc.css');
 
 /*==== Common ====*/
 body {
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #666;
   .col-center{
     float: none;
     margin: 0 auto;
@@ -67,7 +70,7 @@ body {
 .story-box {
   background-color: #fff;
   text-align: center;
-  padding: 25px 62.5px 50px 62.5px;//位置
+  padding: 50px 62.5px 50px 62.5px;//位置
   h3 {
     font-size: 20px;
     text-align: left;
@@ -91,7 +94,7 @@ body {
 .service-box {
   background-color: #f8f8f8;
   text-align: center;
-  padding: 25px 62.5px 50px 62.5px;
+  padding: 50px 62.5px 50px 62.5px;
   .box-1 {
     margin: 0 25px;
     img {
@@ -105,6 +108,27 @@ body {
       line-height: 24px;
       text-align: justify;
       margin-top: 25px;
+    }
+  }
+}
+
+/*==== category 商品分类 ====*/
+.category-box {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 62.5px 50px 62.5px;
+  .category-content {
+    img {
+      width: 250px;
+    }
+    h3 {
+      font-size: 18px;
+      padding: 20px 0;
+    }
+    p {
+      color: #666;
+      line-height: 24px;
+      text-align: justify;
     }
   }
 }
