@@ -27,6 +27,14 @@ body {
     float: none;
     margin: 0 auto;
   }
+  a {
+    color: #666;
+  }
+  a:hover {
+    color: #7f8c8d;
+    transition: 0.5s;
+    text-decoration: none;
+  }
 }
 
 /*==== box-welcome ====*/
@@ -95,7 +103,7 @@ body {
   background-color: #f8f8f8;
   text-align: center;
   padding: 50px 62.5px 50px 62.5px;
-  .box-1 {
+  .service-item {
     margin: 0 25px;
     img {
       width: 100px;
@@ -117,7 +125,7 @@ body {
   background-color: #fff;
   text-align: center;
   padding: 50px 62.5px 50px 62.5px;
-  .category-content {
+  .category-item {
     img {
       width: 250px;
     }
@@ -126,9 +134,34 @@ body {
       padding: 20px 0;
     }
     p {
-      color: #666;
       line-height: 24px;
       text-align: justify;
+    }
+  }
+}
+
+/*==== 推荐商品 ====*/
+.recommend-box {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 50px 0;
+  .recommend-item {
+    .recommend-part1 {
+      img {
+        width: 100%;
+      }
+      box-shadow: 2px 2px 5px #888;
+      margin-top: 15px;
+    }
+    .recommend-part1:hover {
+      opacity: 0.6;
+    }
+    h6 {
+      font-size: 14px;
+      margin-top: 30px;
+    }
+    p {
+      margin-bottom: 40px;
     }
   }
 }

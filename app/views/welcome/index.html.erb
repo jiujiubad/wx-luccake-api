@@ -93,21 +93,21 @@
         <div class="short-line"></div>
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs 12">
-            <div class="box-1">
+            <div class="service-item">
               <%= image_tag("service_1.png") %>
               <h3>品质保证</h3>
               <p>本店的商品皆通过市场验证，使用最高级的材料制作而成，品质为业界领先标准。</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs 12">
-            <div class="box-1">
+            <div class="service-item">
               <%= image_tag("service_2.png") %>
               <h3>快速送达</h3>
               <p>全国皆享有当天下单、隔日送达的服务，过程中有任何损坏皆由我们负责，请放心购买。</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs 12">
-            <div class="box-1">
+            <div class="service-item">
               <%= image_tag("service_3.png") %>
               <h3>安心使用</h3>
               <p>设计皆考量人体工学及真实使用情境，使用起来更安心。</p>
@@ -123,21 +123,21 @@
     <div class="row">
       <div class="col-md-10 col-center">
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12 category-content">
+          <div class="col-md-4 col-sm-4 col-xs-12 category-item">
             <%= link_to '#' do %>
               <%= image_tag("category_1.jpg") %>
               <h3>器皿</h3>
               <p>不鏽鋼材質便於清洗，不怕碰撞，緻密紋理相當迷人。鍋體兩側都有尖口，左右撇子都好用。可以煮兩到三人份的奶茶、一人份的湯麵、粥類，料理後亦可直接端上桌，可愛又方便！</p>
             <% end %>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 category-content">
+          <div class="col-md-4 col-sm-4 col-xs-12 category-item">
             <%= link_to '#' do %>
               <%= image_tag("category_2.jpg") %>
               <h3>厨具</h3>
               <p>工房Aizawa最受歡迎的牛奶鍋，由創立於大正11年、以製作金屬食器聞名的老舖Aizawa工房製作而成。在職人們的手中，金屬冷硬的質感，帶上了手工製作的細緻與溫度。</p>
             <% end %>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 category-content">
+          <div class="col-md-4 col-sm-4 col-xs-12 category-item">
             <%= link_to '#' do %>
               <%= image_tag("category_3.jpg") %>
               <h3>锅碗</h3>
@@ -149,6 +149,123 @@
     </div>
   </section>
 
-
-
+  <!--==== 推荐商品 ====-->
+  <section class="recommend-box">
+    <div class="row">
+      <div class="col-md-10 col-center">
+        <h2>推荐商品</h2>
+        <div class="short-line"></div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_1.jpg") %>
+              </div>
+              <h6>两手锅</h6>
+              <p>$550</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_2.jpg") %>
+              </div>
+              <h6>平底锅</h6>
+              <p>$750</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_3.jpg") %>
+              </div>
+              <h6>铁制茶壶</h6>
+              <p>$450</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_4.jpg") %>
+              </div>
+              <h6>茶壶</h6>
+              <p>$250</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_5.jpg") %>
+              </div>
+              <h6>八角点心盘</h6>
+              <p>$150</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_6.jpg") %>
+              </div>
+              <h6>点心盘</h6>
+              <p>$80</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_7.jpg") %>
+              </div>
+              <h6>木盘</h6>
+              <p>$125</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_8.jpg") %>
+              </div>
+              <h6>酱料碟</h6>
+              <p>$20</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_9.jpg") %>
+              </div>
+              <h6>酱料碟</h6>
+              <p>$50</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_10.jpg") %>
+              </div>
+              <h6>马克杯</h6>
+              <p>$80</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_11.jpg") %>
+              </div>
+              <h6>陶锅</h6>
+              <p>$650</p>
+            <% end %>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 recommend-item">
+            <%= link_to '#' do %>
+              <div class="recommend-part1">
+                <%= image_tag("item_12.jpg") %>
+              </div>
+              <h6>8号锅</h6>
+              <p>$500</p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
