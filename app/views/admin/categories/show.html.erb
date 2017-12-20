@@ -1,19 +1,4 @@
-<!-- Split button -->
-<div class="btn-group col-md-12" style="margin-bottom:20px;">
-  <button type="button" class="btn btn-danger">
-    所有商品
-  </button>
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="caret"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li>
- 
-    </li>
-  </ul>
-</div>
-
+<h2><%= @category.name %>的所有商品：</h2>
 
 <% @products.each do |product| %>
   <div class="col-md-3">
