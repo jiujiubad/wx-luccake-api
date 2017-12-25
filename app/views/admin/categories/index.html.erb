@@ -28,7 +28,7 @@
           <% end %>
         <% end %>
       </td>
-      <td><%= category.category_title %></td>
+      <td><%= category.try(:category_title) %></td>
       <td>
         <%= link_to '编辑',edit_admin_category_path(category), class:"btn btn-info btn-xs" %>
         <%= link_to '删除',admin_category_path(category),method: :delete, data: {confirm: '确定删除？'}, class:"btn btn-danger btn-xs"%></td>
