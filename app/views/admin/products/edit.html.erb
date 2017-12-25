@@ -12,7 +12,7 @@
       <%= image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
     <% end %>
     <%= f.input :image %>
-    <%= f.select :category_id, @categories %>
+    <%= f.association :category %>
     <%= f.submit "保存", data:{disable_with:"正在保存.."} %>
   <% end %>
 </div>
