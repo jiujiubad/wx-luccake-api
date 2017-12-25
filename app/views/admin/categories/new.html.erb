@@ -1,16 +1,7 @@
 <h1>编辑分类</h1>
 
 <%= simple_form_for [:admin, @category] do |f| %>
-  <%= f.error_notification %>
-  <div class="form-inputs">
-    <%= f.input :name %>
-  </div>
-  <div class="form-inputs">
-    <%= f.input :category_title %>
-  </div>
-  <div class="form-inputs">
-    <%= f.input :category_image%>
-  </div>
+  <%= render partial:"form", locals:{f: f} %>
   <div class="form-actions">
     <%= f.submit %>
   </div>

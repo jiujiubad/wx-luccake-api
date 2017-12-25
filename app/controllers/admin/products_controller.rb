@@ -4,7 +4,7 @@ class Admin::ProductsController < ApplicationController
   layout "admin"
 
   def index
-    @products = Product.all
+    @products = Product.includes(:categories).all
   end
 
   def show
