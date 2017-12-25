@@ -5,6 +5,17 @@
   <div class="form-inputs">
     <%= f.input :name %>
   </div>
+  <div class="form-inputs">
+    <%= f.input :category_title %>
+  </div>
+  <% if @category.category_image.present? %>
+    <%= image_tag(@category.category_image.thumb.url, class:"thumbnail") %>
+  <% else %>
+    <%= image_tag("http://placehold.it/200x100&text=No Pic", class:"thumbnail") %>
+  <% end %>
+  <div class="form-inputs">
+    <%= f.input :category_image%>
+  </div>
   <div class="form-actions">
     <%= f.submit %>
   </div>

@@ -27,10 +27,10 @@ ActiveRecord::Schema.define(version: 20171220024832) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "title"
-    t.string   "image"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "category_image"
+    t.string   "category_title"
   end
 
   create_table "orders", force: :cascade do |t|
