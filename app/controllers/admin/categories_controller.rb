@@ -47,6 +47,6 @@ class Admin::CategoriesController < ApplicationController
   private
 
   def category_params
-    params.require(:category).permit(:name, :category_image, :category_title)
+    params.require(:category).permit(:name, :category_image, :category_title, :product_ids => [])
   end
 end
