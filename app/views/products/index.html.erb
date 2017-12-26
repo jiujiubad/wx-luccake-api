@@ -1,9 +1,9 @@
 <!-- Split button -->
 <div class="btn-group col-md-12" style="margin-bottom:20px;">
-  <button type="button" class="btn btn-danger">
+  <button type="button" class="btn btn-info">
     所有商品
   </button>
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="caret"></span>
     <span class="sr-only">Toggle Dropdown</span>
   </button>
@@ -18,8 +18,8 @@
 <% @products.each do |product| %>
   <div class="col-md-3">
     <%= link_to product_path(product) do %>
-      <% if product.photos.present? %>
-        <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
+      <% if product.image.present? %>
+        <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
       <% else %>
         <%= image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
       <% end %>
