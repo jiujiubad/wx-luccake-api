@@ -13,6 +13,7 @@ class Admin::ProductsController < ApplicationController
 
   def new
     @product = Product.new
+    @photo = @product.photos.build
   end
 
   def edit
@@ -22,6 +23,11 @@ class Admin::ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
+      if params[:photos] != nil
+        params[:photos]['avatar'].each do |a|
+          @photo = @product.photos.create(:avatar => a)
+        end
+      end
       redirect_to admin_products_path
     else
       render :new
@@ -30,7 +36,15 @@ class Admin::ProductsController < ApplicationController
 
   def update
     @product = Product.find(params[:id])
-    if @product.update(product_params)
+    if params[:photos] != nil
+      @product.photos.destroy_all #need to destroy old pics first
+      params[:photos]['avatar'].each do |a|
+        @picture = @product.photos.create(:avatar => a)
+      end
+      @product.update(product_params)
+      redirect_to admin_products_path
+      flash[:notice] = "商品已更新"
+    elsif @product.update(product_params)
       redirect_to admin_products_path
       flash[:notice] = "商品已更新"
     else

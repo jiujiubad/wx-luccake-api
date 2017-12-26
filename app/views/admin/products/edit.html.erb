@@ -3,11 +3,14 @@
 <div class="col-md-6 col-center">
   <%= simple_form_for [:admin, @product] do |f| %>
     <%= render partial: "form", locals: { :f => f } %>
-    <% if @product.image.present? %>
-      <%= image_tag(@product.image.thumb.url, class:"thumbnail") %>
-    <% else %>
-      <%= image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
-    <% end %>
+      <% if @product.photos.present? %>
+        <span>目前商品图</span> <br>
+        <% @product.photos.each do |p| %>
+          <%= image_tag p.avatar.thumb.url %><br>
+        <% end %>
+      <% else %>
+        <%= image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
+      <% end %>
     <%= f.submit "保存", data:{disable_with:"正在保存.."}, class:"btn btn-info btn-lg" %>
   <% end %>
 </div>
