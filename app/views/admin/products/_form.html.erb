@@ -2,9 +2,10 @@
 <%= f.input :description %>
 <%= f.input :price %>
 <%= f.input :quantity %>
+<%= f.label :"上传主图" %><br>
 <%= f.input :image %>
 <%= f.label :"选择分类" %>
 <%= f.select :category_ids, Category.all.map{ |c| [c.name, c.id] }, {}, :multiple => true, :class => "form-control" %>
-<%= f.label :"上传图片" %><br>
+<%= f.label :"上传详情小图" %><br>
 <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
 </br>

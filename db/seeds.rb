@@ -35,6 +35,7 @@ Product.create(
   price: 400,
   quantity: 100,
   category_ids: [1, 2], # 把商品加到分类1、分类2、分类x
+  image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmu2lin6udj30zk0qogmm.jpg')
   )
   puts "p1"
 Product.create(
@@ -44,10 +45,11 @@ Product.create(
   price: 400,
   quantity: 100,
   category_ids: [1, 2],
+  image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmu2lgywonj30zk0qoq4h.jpg')
   )
   puts "p2"
 
-# 一个商品id上传多张图片
+# 详情页小图：一个商品id上传多张图片
 Photo.create(
   product_id:1,
   avatar:

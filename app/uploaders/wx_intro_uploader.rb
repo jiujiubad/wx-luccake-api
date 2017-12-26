@@ -1,4 +1,4 @@
-class AvatarUploader < CarrierWave::Uploader::Base
+class WxIntroUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -18,14 +18,14 @@ class AvatarUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  process resize_to_fit: [800, 800]
+  process resize_to_fit: [400, 224] #主页16：9海报
 
   version :medium do
-    process resize_to_fill: [400,400]
+    process resize_to_fill: [400,152] #分类页宽海报
   end
 
   version :thumb do
-    process resize_to_fill: [200,200]
+    process resize_to_fill: [200,112] #电脑显示
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
