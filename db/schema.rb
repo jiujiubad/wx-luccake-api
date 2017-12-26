@@ -64,13 +64,6 @@ ActiveRecord::Schema.define(version: 20171226005059) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "product_detail_images", force: :cascade do |t|
-    t.integer  "product_id"
-    t.string   "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "product_lists", force: :cascade do |t|
     t.integer  "order_id"
     t.string   "product_name"
