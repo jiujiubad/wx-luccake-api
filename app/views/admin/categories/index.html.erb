@@ -22,7 +22,7 @@
       <td>
         <%= link_to admin_category_path(category) do %>
           <% if category.category_image.present? %>
-            <%= image_tag(category.category_image.thumb.url, class:"thumbnail") %>
+            <%= image_tag(category.category_image.thumb2.url, class:"thumbnail") %>
           <% else %>
             <%= image_tag("http://placehold.it/200x100&text=No Pic", class:"thumbnail") %>
           <% end %>

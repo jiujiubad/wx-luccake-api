@@ -1,4 +1,4 @@
-class ImageUploader < CarrierWave::Uploader::Base
+class AvatarUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -20,12 +20,20 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   process resize_to_fit: [800, 800]
 
+  version :medium do
+    process resize_to_fill: [400,400]
+  end
+
+  version :medium2 do
+    process resize_to_fill: [400,200]
+  end
+
   version :thumb do
     process resize_to_fill: [200,200]
   end
 
-  version :medium do
-    process resize_to_fill: [400,400]
+  version :thumb2 do
+    process resize_to_fill: [200,100]
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
