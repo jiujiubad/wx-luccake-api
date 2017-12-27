@@ -23,7 +23,9 @@
 
 /*==== Common ====*/
 body {
+  overflow-x: hidden; //裁剪内容，超出视窗不显示
   font-family: 'Noto Sans SC', sans-serif;
+  letter-spacing: 1px;
   color: #666;
   .col-center{
     float: none;
