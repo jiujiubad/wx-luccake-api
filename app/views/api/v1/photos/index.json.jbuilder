@@ -1,1 +1,1 @@
-json.photos @photos.each{}
+json.data @photos.each{}

@@ -1,1 +1,1 @@
-json.partial! 'item', product: @products
+json.data @products.each{}
