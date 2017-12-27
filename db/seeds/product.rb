@@ -358,7 +358,7 @@ title: "百日宴周",
 description: "定制 七彩匠心翻糖蛋糕上海定制儿童生日白羊小羊小马白马百日宴周",
 price: 450,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmukbil6oqj30u00w9gna.jpg')
+image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0o08piyj30sn0rvwf8.jpg')
 )
 puts "p40"
 Product.create(
@@ -367,7 +367,7 @@ title: "包包主题",
 description: "定制 香奈名贵包包主题翻糖生日蛋糕 送女神女友美女蛋糕深圳配送上门",
 price: 500,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukc88ug5j30u00w9abl.jpg')
+image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0pziz2nj30tb0rrmxs.jpg')
 )
 puts "p41"
 Product.create(
@@ -376,7 +376,7 @@ title: "老婆公主",
 description: "定制 瑞雪翻糖定制包包送女友老婆公主生日蛋糕结婚情人节上海杭州同城",
 price: 300,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukcthh65j30u00w9dhi.jpg')
+image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0rmjtjkj30ta0rw0tj.jpg')
 )
 puts "p42"
 Product.create(
@@ -385,7 +385,7 @@ title: "定制手工",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 350,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukdmx9zuj30u00w9abw.jpg')
+image: open('https://ws2.sinaimg.cn/large/006tNc79gy1fmv0swlh8zj30u00sewfa.jpg')
 )
 puts "p43"
 Product.create(
@@ -403,7 +403,7 @@ title: "玫瑰酱",
 description: "21cake廿一客新鲜乳脂奶油玫瑰酱水果夹心芒果生日蛋糕百利甜",
 price: 450,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmukf3tvb4j30u00w9dhj.jpg')
+image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0v9vqs2j30ti0r40tk.jpg')
 )
 puts "p45"
 Product.create(
@@ -412,7 +412,7 @@ title: "壹点壹",
 description: "壹点壹客儿童生日蛋糕生日同城奶油草莓蛋糕慕斯翻糖蛋糕深圳成都",
 price: 500,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmukfsuto1j30u00w9wfx.jpg')
+image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0wges5fj30t80r7t98.jpg')
 )
 puts "p46"
 Product.create(
@@ -421,7 +421,7 @@ title: "送女友",
 description: "翻糖蛋糕 郑州同城速递 金色皇冠 王冠 女王 公主 送女友老婆女儿",
 price: 300,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmukh5rcd3j30u00w9q4q.jpg')
+image: open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0xildfij30t90rv751.jpg')
 )
 puts "p47"
 Product.create(
@@ -430,7 +430,7 @@ title: "明星老公",
 description: "卡通人偶定制庆典聚会翻糖生日蛋糕送老板领导男生男友明星老公",
 price: 350,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuki0ej2vj30u00w9abv.jpg')
+image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0yqbq3uj30ti0r7t9g.jpg')
 )
 puts "p48"
 Product.create(
@@ -439,7 +439,7 @@ title: "爱之城",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 400,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukj0o6cyj30u00w9q4j.jpg')
+image: open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0ztz5r6j30t90s7dgk.jpg')
 )
 puts "p49"
 Product.create(
@@ -448,7 +448,7 @@ title: "啃啃米",
 description: "定制 西安啃啃米奇三层奶油蛋糕周岁 婚庆蛋糕 公司庆典百天满月",
 price: 450,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmukjnlkjbj30u00w9764.jpg')
+image: open('https://ws2.sinaimg.cn/large/006tNc79gy1fmv10qqp9wj30u00ru0td.jpg')
 )
 puts "p50"
 Product.create(
@@ -506,17 +506,17 @@ puts "p_image1"
 Photo.create(
 product_id:2,
 avatar:
-open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuiweh350j30u00u0dhe.jpg')
+open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0icz2yej30qo0k2q3l.jpg')
 )
 Photo.create(
 product_id:2,
 avatar:
-open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuiwdvbf8j30u00u0abl.jpg')
+open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0ic8xx8j30qo0qot9l.jpg')
 )
 Photo.create(
 product_id:2,
 avatar:
-open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuiwdc53cj30u00u0q55.jpg')
+open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0icm4jrj30qo0qoq3z.jpg')
 )
 puts "p_image2"
 Photo.create(
@@ -1309,7 +1309,7 @@ puts "p_image39"
 Photo.create(
 product_id:40,
 avatar:
-open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmukbil6oqj30u00w9gna.jpg')
+open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0o08piyj30sn0rvwf8.jpg')
 )
 Photo.create(
 product_id:40,
@@ -1325,7 +1325,7 @@ puts "p_image40"
 Photo.create(
 product_id:41,
 avatar:
-open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukc88ug5j30u00w9abl.jpg')
+open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0pziz2nj30tb0rrmxs.jpg')
 )
 Photo.create(
 product_id:41,
@@ -1341,7 +1341,7 @@ puts "p_image41"
 Photo.create(
 product_id:42,
 avatar:
-open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukcthh65j30u00w9dhi.jpg')
+open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0rmjtjkj30ta0rw0tj.jpg')
 )
 Photo.create(
 product_id:42,
@@ -1362,7 +1362,7 @@ puts "p_image42"
 Photo.create(
 product_id:43,
 avatar:
-open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukdmx9zuj30u00w9abw.jpg')
+open('https://ws2.sinaimg.cn/large/006tNc79gy1fmv0swlh8zj30u00sewfa.jpg')
 )
 Photo.create(
 product_id:43,
@@ -1378,7 +1378,7 @@ puts "p_image43"
 Photo.create(
 product_id:44,
 avatar:
-open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukefduj7j30u00w9jt0.jpg')
+open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0u6pargj30t30t4gmb.jpg')
 )
 Photo.create(
 product_id:44,
@@ -1399,7 +1399,7 @@ puts "p_image44"
 Photo.create(
 product_id:45,
 avatar:
-open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmukf3tvb4j30u00w9dhj.jpg')
+open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0v9vqs2j30ti0r40tk.jpg')
 )
 Photo.create(
 product_id:45,
@@ -1415,7 +1415,7 @@ puts "p_image45"
 Photo.create(
 product_id:46,
 avatar:
-open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmukfsuto1j30u00w9wfx.jpg')
+open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0wges5fj30t80r7t98.jpg')
 )
 Photo.create(
 product_id:46,
@@ -1431,7 +1431,7 @@ puts "p_image46"
 Photo.create(
 product_id:47,
 avatar:
-open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmukh5rcd3j30u00w9q4q.jpg')
+open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0xildfij30t90rv751.jpg')
 )
 Photo.create(
 product_id:47,
@@ -1452,7 +1452,7 @@ puts "p_image47"
 Photo.create(
 product_id:48,
 avatar:
-open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuki0ej2vj30u00w9abv.jpg')
+open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0yqbq3uj30ti0r7t9g.jpg')
 )
 Photo.create(
 product_id:48,
@@ -1478,7 +1478,7 @@ puts "p_image48"
 Photo.create(
 product_id:49,
 avatar:
-open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukj0o6cyj30u00w9q4j.jpg')
+open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0ztz5r6j30t90s7dgk.jpg')
 )
 Photo.create(
 product_id:49,
@@ -1494,7 +1494,7 @@ puts "p_image49"
 Photo.create(
 product_id:50,
 avatar:
-open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmukjnlkjbj30u00w9764.jpg')
+open('https://ws2.sinaimg.cn/large/006tNc79gy1fmv10qqp9wj30u00ru0td.jpg')
 )
 Photo.create(
 product_id:50,
