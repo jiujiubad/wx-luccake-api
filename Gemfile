@@ -35,25 +35,26 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'simple_form'
-gem 'font-awesome-rails'
-gem 'carrierwave'
-gem 'mini_magick'
-gem "letter_opener", :group => :development
-gem 'aasm'
-gem 'carrierwave-qiniu'
-gem 'qiniu-rs'
-gem 'figaro'
-gem 'mysql2'
-gem "select2-rails"
-gem 'awesome_rails_console'
+gem 'bootstrap-sass' #排版
+gem 'devise' #用户管理
+gem 'simple_form' #表单美化
+gem 'font-awesome-rails' #小图标icon
+gem 'carrierwave' #上传图片
+gem 'mini_magick' #裁剪图片
+gem "letter_opener", :group => :development #邮件功能本地测试
+gem 'aasm' #有限状态机制
+gem 'carrierwave-qiniu' #七牛云图片存储
+gem 'qiniu-rs' #七牛云图片存储
+gem 'figaro' #管理密钥
+gem 'mysql2' #服务器数据库
+gem "select2-rails" #表单选择器UI美化
+gem 'awesome_rails_console' #美化rails c显示
+gem 'ckeditor' #图文编辑器
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'capistrano-rails'
-  gem 'capistrano-passenger'
+  gem 'capistrano-rails' #部署工具
+  gem 'capistrano-passenger' #部署工具
   gem 'byebug', platform: :mri
   gem 'sqlite3'
 end

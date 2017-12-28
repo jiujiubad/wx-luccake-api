@@ -39,6 +39,16 @@ body {
     transition: 0.5s;
     text-decoration: none;
   }
+  .ckeditor { //图文编辑器
+  margin: 30px auto;
+  font-size: 1.2em;
+  line-height: 1.8em;                   //拉开行高
+  text-align: justify;                  //文本两端对齐
+  img {
+    max-width:100%; height:auto;         //重要样式代码，实现不同大小屏幕下的响应式伸缩
+    border-radius: 6px;                 //为所有图片设置6px的圆角
+    }
+  }
 }
 
 /*==== box-welcome ====*/

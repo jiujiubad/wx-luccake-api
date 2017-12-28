@@ -17,4 +17,5 @@
 //= require bootstrap/dropdown
 //= require bootstrap-sprockets
 //= require select2
+//= require ckeditor/init
 //= require_tree .
