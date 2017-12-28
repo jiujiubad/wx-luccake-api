@@ -1,11 +1,12 @@
 <%= f.input :title %>
-<%= f.input :description, as: :ckeditor, language: 'zh-CN' %>
+<%= f.input :description %>
 <%= f.input :price %>
 <%= f.input :quantity %>
-<%= f.label :"上传主图" %><br>
-<%= f.input :image %>
+<%= f.input :image, label:'上传主图' %>
+<br/>
+<%= f.label :"上传小图" %>
+<%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
+<br/>
 <%= f.label :"选择分类" %>
 <%= f.select :category_ids, Category.all.map{ |c| [c.name, c.id] }, {}, :multiple => true, :class => "form-control" %>
-<%= f.label :"上传详情小图" %><br>
-<%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
-</br>
+<%= f.input :detail, as: :ckeditor, language:'zh-CN', label:'图文详情' %>

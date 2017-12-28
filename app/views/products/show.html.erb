@@ -1,27 +1,43 @@
-<div class="col-md-6">
-  <% if @product.image.present? %>
+<section class="image-box">
+  <div class="row">
     <div class="col-md-12">
-      <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
-    </div>
-  <% else %>
-    <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
-  <% end %>
-  <% if @photos.present? %>
-    <% @photos.each_with_index do |p, index| %>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <%= image_tag p.avatar.thumb.url %>
+      <div class="col-md-6">
+        <% if @product.image.present? %>
+          <div class="col-md-12">
+            <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
+          </div>
+        <% else %>
+          <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+        <% end %>
+        <% if @photos.present? %>
+          <% @photos.each_with_index do |p, index| %>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <%= image_tag p.avatar.thumb.url %>
+            </div>
+          <% end %>
+        <% end %>
       </div>
-    <% end %>
-  <% end %>
-</div>
-<div class="col-md-6">
-  <h1><%= @product.title %></h1>
-  <h4 class="ckeditor"><%= simple_format(@product.description) %></h4>
-  <h2>¥ <%= @product.price %> 元</h2>
-  <% if @product.quantity > 0 %>
-    <p>库存 <%= @product.quantity %></p>
-  <% else %>
-    <p>商品已售罄</p>
-  <% end %>
-  <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post, class:"btn btn-danger btn-lg") %>
-</div>
+      <div class="col-md-6">
+        <h1><%= @product.title %></h1>
+        <h4 class="ckeditor"><%= simple_format(@product.description) %></h4>
+        <h2>¥ <%= @product.price %> 元</h2>
+        <% if @product.quantity > 0 %>
+          <p>库存 <%= @product.quantity %></p>
+        <% else %>
+          <p>商品已售罄</p>
+        <% end %>
+        <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post, class:"btn btn-danger btn-lg") %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-box">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-9 ckeditor">
+        <%= simple_format(@product.detail) %>
+      </div>
+    </div>
+  </div>
+</section>
