@@ -5,7 +5,7 @@ title: "金色皇冠",
 description: "翻糖蛋糕 郑州同城速递 金色皇冠 王冠 女王 公主 送女友老婆女儿",
 price: 400,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuiw45ferj30u00u0q4i.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuiw45ferj30u00u0q4i.jpg')
 )
 puts "p1"
 Product.create(
@@ -14,7 +14,7 @@ title: "明星老公",
 description: "卡通人偶定制庆典聚会翻糖生日蛋糕送老板领导男生男友明星老公",
 price: 300,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmuixp275ij30qo0k2q3l.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmuixp275ij30qo0k2q3l.jpg')
 )
 puts "p2"
 Product.create(
@@ -23,7 +23,7 @@ title: "爱之城",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 350,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuizqxvppj30ku0gmdg6.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuizqxvppj30ku0gmdg6.jpg')
 )
 puts "p3"
 Product.create(
@@ -32,7 +32,7 @@ title: "慕斯翻糖",
 description: "壹点壹客儿童生日蛋糕生日同城奶油草莓蛋糕慕斯翻糖蛋糕深圳成都",
 price: 400,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmuj0kax5uj30ku0kqmxm.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmuj0kax5uj30ku0kqmxm.jpg')
 )
 puts "p4"
 
@@ -42,7 +42,7 @@ title: "百天满月",
 description: "定制 西安啃啃米奇三层奶油蛋糕周岁 婚庆蛋糕 公司庆典百天满月",
 price: 450,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuj1ns9kpj30ku0psq3m.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuj1ns9kpj30ku0psq3m.jpg')
 )
 puts "p5"
 Product.create(
@@ -51,7 +51,7 @@ title: "甜品台",
 description: "定制 cakeforyou翻糖芭比蛋糕私人定制儿童生日蛋糕甜品台Kitty主题",
 price: 500,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj2to8rij30ku0kumxl.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj2to8rij30ku0kumxl.jpg')
 )
 puts "p6"
 Product.create(
@@ -60,7 +60,7 @@ title: "周岁宝宝",
 description: "定制 lint 生日蛋糕 巧克力 翻糖 DIY 周岁宝宝 儿童 男孩子 全国配送",
 price: 300,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj3xafggj30ku0ku3yy.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj3xafggj30ku0ku3yy.jpg')
 )
 puts "p7"
 Product.create(
@@ -69,7 +69,7 @@ title: "生日蛋糕",
 description: "北京市同城新鲜生日蛋糕配送 翻糖DIY速递 创意定做国安标志围巾",
 price: 350,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj6qs3brj30ku0kuwet.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj6qs3brj30ku0kuwet.jpg')
 )
 puts "p8"
 Product.create(
@@ -78,7 +78,7 @@ title: "小仙女",
 description: "北京市同城配送创意翻糖卡通生日蛋糕百天周岁满月女宝宝小仙女",
 price: 400,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj7bdafij30ku0pg0tk.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj7bdafij30ku0pg0tk.jpg')
 )
 puts "p9"
 
@@ -88,7 +88,7 @@ title: "七彩匠心",
 description: "定制 七彩匠心翻糖蛋糕上海定制儿童生日白羊小羊小马白马百日宴周",
 price: 450,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj8hprh0j30ku0rcmy3.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuj8hprh0j30ku0rcmy3.jpg')
 )
 puts "p10"
 Product.create(
@@ -97,7 +97,7 @@ title: "生日同城",
 description: "定制 瑞雪翻糖定制包包送女友老婆公主生日蛋糕结婚情人节上海杭州同城",
 price: 500,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmujcmkyxkj30u00u1405.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmujcmkyxkj30u00u1405.jpg')
 )
 puts "p11"
 Product.create(
@@ -106,7 +106,7 @@ title: "女友美女",
 description: "定制 香奈名贵包包主题翻糖生日蛋糕 送女神女友美女蛋糕深圳配送上门",
 price: 300,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuje9i0apj30u00u0ta0.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuje9i0apj30u00u0ta0.jpg')
 )
 puts "p12"
 Product.create(
@@ -115,7 +115,7 @@ title: "婚礼定制",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 350,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmujfvncytj30ty0twac0.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmujfvncytj30ty0twac0.jpg')
 )
 puts "p13"
 Product.create(
@@ -124,7 +124,7 @@ title: "CAKEBOSS",
 description: "定制 CAKEBOSS生日蛋糕黑巧克力小熊芝士翻糖蛋糕北京上海西安同城配送",
 price: 400,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujgm7cbhj30u00u1mzf.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujgm7cbhj30u00u1mzf.jpg')
 )
 puts "p14"
 Product.create(
@@ -133,7 +133,7 @@ title: "百利甜",
 description: "21cake廿一客新鲜乳脂奶油玫瑰酱水果夹心芒果生日蛋糕百利甜",
 price: 450,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmujidfpc9j30ku0ko0tr.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmujidfpc9j30ku0ko0tr.jpg')
 )
 puts "p15"
 Product.create(
@@ -142,7 +142,7 @@ title: "儿童生日",
 description: "壹点壹客儿童生日蛋糕生日同城奶油草莓蛋糕慕斯翻糖蛋糕深圳成都",
 price: 500,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujj8y3bbj30zk0qo0ug.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujj8y3bbj30zk0qo0ug.jpg')
 )
 puts "p16"
 Product.create(
@@ -151,7 +151,7 @@ title: "公主",
 description: "翻糖蛋糕 郑州同城速递 金色皇冠 王冠 女王 公主 送女友老婆女儿",
 price: 300,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujkr8dtij30zk0qojtt.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujkr8dtij30zk0qojtt.jpg')
 )
 puts "p17"
 Product.create(
@@ -160,7 +160,7 @@ title: "卡通人偶",
 description: "卡通人偶定制庆典聚会翻糖生日蛋糕送老板领导男生男友明星老公",
 price: 350,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujmahzi3j30rq0rsjte.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujmahzi3j30rq0rsjte.jpg')
 )
 puts "p18"
 Product.create(
@@ -169,7 +169,7 @@ title: "城堡翻糖",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 400,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujo61bx3j30ku0l0dgq.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujo61bx3j30ku0l0dgq.jpg')
 )
 puts "p19"
 Product.create(
@@ -178,7 +178,7 @@ title: "米奇",
 description: "定制 西安啃啃米奇三层奶油蛋糕周岁 婚庆蛋糕 公司庆典百天满月",
 price: 450,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujp31qz8j30kv0rsq4a.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujp31qz8j30kv0rsq4a.jpg')
 )
 puts "p20"
 Product.create(
@@ -187,7 +187,7 @@ title: "芭比蛋糕",
 description: "定制 cakeforyou翻糖芭比蛋糕私人定制儿童生日蛋糕甜品台Kitty主题",
 price: 500,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujqjfs0aj30u014040m.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujqjfs0aj30u014040m.jpg')
 )
 puts "p21"
 Product.create(
@@ -196,7 +196,7 @@ title: "翻糖DIY",
 description: "定制 lint 生日蛋糕 巧克力 翻糖 DIY 周岁宝宝 儿童 男孩子 全国配送",
 price: 300,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujsb0pasj31400tymye.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmujsb0pasj31400tymye.jpg')
 )
 puts "p22"
 Product.create(
@@ -205,7 +205,7 @@ title: "同城新鲜",
 description: "北京市同城新鲜生日蛋糕配送 翻糖DIY速递 创意定做国安标志围巾",
 price: 350,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmujt6l9c4j31400tytai.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmujt6l9c4j31400tytai.jpg')
 )
 puts "p23"
 Product.create(
@@ -214,7 +214,7 @@ title: "翻糖卡通",
 description: "北京市同城配送创意翻糖卡通生日蛋糕百天周岁满月女宝宝小仙女",
 price: 400,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujvu02hpj30ku0kuq46.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujvu02hpj30ku0kuq46.jpg')
 )
 puts "p24"
 Product.create(
@@ -223,7 +223,7 @@ title: "七彩匠心",
 description: "定制 七彩匠心翻糖蛋糕上海定制儿童生日白羊小羊小马白马百日宴周",
 price: 450,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujwhfqk3j30ks0gomxu.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujwhfqk3j30ks0gomxu.jpg')
 )
 puts "p25"
 Product.create(
@@ -232,7 +232,7 @@ title: "香奈名贵",
 description: "定制 香奈名贵包包主题翻糖生日蛋糕 送女神女友美女蛋糕深圳配送上门",
 price: 500,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmujxbigccj30lg0rsdh0.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmujxbigccj30lg0rsdh0.jpg')
 )
 puts "p26"
 Product.create(
@@ -241,7 +241,7 @@ title: "瑞雪翻糖",
 description: "定制 瑞雪翻糖定制包包送女友老婆公主生日蛋糕结婚情人节上海杭州同城",
 price: 300,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujyhxha3j30u013xwgc.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujyhxha3j30u013xwgc.jpg')
 )
 puts "p27"
 Product.create(
@@ -250,7 +250,7 @@ title: "艾妃尔",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 350,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujzgloj1j30zk0qmwfd.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmujzgloj1j30zk0qmwfd.jpg')
 )
 puts "p28"
 Product.create(
@@ -259,7 +259,7 @@ title: "黑巧克力",
 description: "定制 CAKEBOSS生日蛋糕黑巧克力小熊芝士翻糖蛋糕北京上海西安同城配送",
 price: 400,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmuk0781k5j31400tygmr.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmuk0781k5j31400tygmr.jpg')
 )
 puts "p29"
 Product.create(
@@ -268,7 +268,7 @@ title: "新鲜乳脂",
 description: "21cake廿一客新鲜乳脂奶油玫瑰酱水果夹心芒果生日蛋糕百利甜",
 price: 450,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmuk0vat1bj30zk0qmdgt.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmuk0vat1bj30zk0qmdgt.jpg')
 )
 puts "p30"
 Product.create(
@@ -277,7 +277,7 @@ title: "生日同城",
 description: "壹点壹客儿童生日蛋糕生日同城奶油草莓蛋糕慕斯翻糖蛋糕深圳成都",
 price: 500,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuk1m5lm0j30ks0kqq46.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuk1m5lm0j30ks0kqq46.jpg')
 )
 puts "p31"
 Product.create(
@@ -286,7 +286,7 @@ title: "金色皇冠",
 description: "翻糖蛋糕 郑州同城速递 金色皇冠 王冠 女王 公主 送女友老婆女儿",
 price: 300,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmuk2d7ln0j30u011imzd.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmuk2d7ln0j30u011imzd.jpg')
 )
 puts "p32"
 Product.create(
@@ -295,7 +295,7 @@ title: "庆典聚会",
 description: "卡通人偶定制庆典聚会翻糖生日蛋糕送老板领导男生男友明星老公",
 price: 350,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuk3jz3bij30te1380um.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuk3jz3bij30te1380um.jpg')
 )
 puts "p33"
 Product.create(
@@ -304,7 +304,7 @@ title: "深圳520",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 400,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuk4hbpm7j30ks0gkq3n.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuk4hbpm7j30ks0gkq3n.jpg')
 )
 puts "p34"
 Product.create(
@@ -313,7 +313,7 @@ title: "婚庆蛋糕",
 description: "定制 西安啃啃米奇三层奶油蛋糕周岁 婚庆蛋糕 公司庆典百天满月",
 price: 450,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmuk5llpzuj30u013xgns.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmuk5llpzuj30u013xgns.jpg')
 )
 puts "p35"
 Product.create(
@@ -322,7 +322,7 @@ title: "Kitty主题",
 description: "定制 cakeforyou翻糖芭比蛋糕私人定制儿童生日蛋糕甜品台Kitty主题",
 price: 500,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuk6oc9txj30zk0qomyh.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmuk6oc9txj30zk0qomyh.jpg')
 )
 puts "p36"
 Product.create(
@@ -331,7 +331,7 @@ title: "生日蛋糕",
 description: "定制 lint 生日蛋糕 巧克力 翻糖 DIY 周岁宝宝 儿童 男孩子 全国配送",
 price: 300,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuk7h7qdoj30u00u0gn1.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuk7h7qdoj30u00u0gn1.jpg')
 )
 puts "p37"
 Product.create(
@@ -340,7 +340,7 @@ title: "生日同城",
 description: "北京市同城新鲜生日蛋糕配送 翻糖DIY速递 创意定做国安标志围巾",
 price: 350,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuk8t3gqfj30u00u0jt6.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tKfTcgy1fmuk8t3gqfj30u00u0jt6.jpg')
 )
 puts "p38"
 Product.create(
@@ -349,7 +349,7 @@ title: "创意翻糖",
 description: "北京市同城配送创意翻糖卡通生日蛋糕百天周岁满月女宝宝小仙女",
 price: 400,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmuka6an67j30zk0qojt1.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmuka6an67j30zk0qojt1.jpg')
 )
 puts "p39"
 Product.create(
@@ -358,7 +358,7 @@ title: "百日宴周",
 description: "定制 七彩匠心翻糖蛋糕上海定制儿童生日白羊小羊小马白马百日宴周",
 price: 450,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0o08piyj30sn0rvwf8.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0o08piyj30sn0rvwf8.jpg')
 )
 puts "p40"
 Product.create(
@@ -367,7 +367,7 @@ title: "包包主题",
 description: "定制 香奈名贵包包主题翻糖生日蛋糕 送女神女友美女蛋糕深圳配送上门",
 price: 500,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0pziz2nj30tb0rrmxs.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0pziz2nj30tb0rrmxs.jpg')
 )
 puts "p41"
 Product.create(
@@ -376,7 +376,7 @@ title: "老婆公主",
 description: "定制 瑞雪翻糖定制包包送女友老婆公主生日蛋糕结婚情人节上海杭州同城",
 price: 300,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0rmjtjkj30ta0rw0tj.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0rmjtjkj30ta0rw0tj.jpg')
 )
 puts "p42"
 Product.create(
@@ -385,7 +385,7 @@ title: "定制手工",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 350,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tNc79gy1fmv0swlh8zj30u00sewfa.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tNc79gy1fmv0swlh8zj30u00sewfa.jpg')
 )
 puts "p43"
 Product.create(
@@ -394,7 +394,7 @@ title: "小熊芝士",
 description: "定制 CAKEBOSS生日蛋糕黑巧克力小熊芝士翻糖蛋糕北京上海西安同城配送",
 price: 400,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukefduj7j30u00w9jt0.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukefduj7j30u00w9jt0.jpg')
 )
 puts "p44"
 Product.create(
@@ -403,7 +403,7 @@ title: "玫瑰酱",
 description: "21cake廿一客新鲜乳脂奶油玫瑰酱水果夹心芒果生日蛋糕百利甜",
 price: 450,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0v9vqs2j30ti0r40tk.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0v9vqs2j30ti0r40tk.jpg')
 )
 puts "p45"
 Product.create(
@@ -412,7 +412,7 @@ title: "壹点壹",
 description: "壹点壹客儿童生日蛋糕生日同城奶油草莓蛋糕慕斯翻糖蛋糕深圳成都",
 price: 500,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0wges5fj30t80r7t98.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tNc79gy1fmv0wges5fj30t80r7t98.jpg')
 )
 puts "p46"
 Product.create(
@@ -421,7 +421,7 @@ title: "送女友",
 description: "翻糖蛋糕 郑州同城速递 金色皇冠 王冠 女王 公主 送女友老婆女儿",
 price: 300,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0xildfij30t90rv751.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0xildfij30t90rv751.jpg')
 )
 puts "p47"
 Product.create(
@@ -430,7 +430,7 @@ title: "明星老公",
 description: "卡通人偶定制庆典聚会翻糖生日蛋糕送老板领导男生男友明星老公",
 price: 350,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0yqbq3uj30ti0r7t9g.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tNc79gy1fmv0yqbq3uj30ti0r7t9g.jpg')
 )
 puts "p48"
 Product.create(
@@ -439,7 +439,7 @@ title: "爱之城",
 description: "艾妃尔深圳520爱之城堡翻糖婚礼定制手工滴落生日蛋糕同城配送",
 price: 400,
 quantity: 100,
-image: open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0ztz5r6j30t90s7dgk.jpg')
+detail_image: open('https://ws1.sinaimg.cn/large/006tNc79gy1fmv0ztz5r6j30t90s7dgk.jpg')
 )
 puts "p49"
 Product.create(
@@ -448,7 +448,7 @@ title: "啃啃米",
 description: "定制 西安啃啃米奇三层奶油蛋糕周岁 婚庆蛋糕 公司庆典百天满月",
 price: 450,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tNc79gy1fmv10qqp9wj30u00ru0td.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tNc79gy1fmv10qqp9wj30u00ru0td.jpg')
 )
 puts "p50"
 Product.create(
@@ -457,7 +457,7 @@ title: "翻糖芭比",
 description: "定制 cakeforyou翻糖芭比蛋糕私人定制儿童生日蛋糕甜品台Kitty主题",
 price: 500,
 quantity: 100,
-image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukkkcqq3j30u00u0goo.jpg')
+detail_image: open('https://ws3.sinaimg.cn/large/006tKfTcgy1fmukkkcqq3j30u00u0goo.jpg')
 )
 puts "p51"
 Product.create(
@@ -466,7 +466,7 @@ title: "周岁宝宝",
 description: "定制 lint 生日蛋糕 巧克力 翻糖 DIY 周岁宝宝 儿童 男孩子 全国配送",
 price: 300,
 quantity: 100,
-image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmukl20md8j30u00u0400.jpg')
+detail_image: open('https://ws4.sinaimg.cn/large/006tKfTcgy1fmukl20md8j30u00u0400.jpg')
 )
 puts "p52"
 Product.create(
@@ -475,7 +475,7 @@ title: "女孩",
 description: "北京市同城新鲜生日蛋糕配送 翻糖DIY速递 创意定做国安标志围巾",
 price: 350,
 quantity: 100,
-image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmukm7k6f7j30qo0jkwf9.jpg')
+detail_image: open('https://ws2.sinaimg.cn/large/006tKfTcgy1fmukm7k6f7j30qo0jkwf9.jpg')
 )
 puts "p53"
 

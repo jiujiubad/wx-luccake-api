@@ -42,15 +42,6 @@ ActiveRecord::Schema.define(version: 20171228075932) do
     t.index ["product_id"], name: "index_category_prodcut_relationships_on_product_id"
   end
 
-  create_table "event_attachments", force: :cascade do |t|
-    t.integer  "event_id"
-    t.string   "attachment"
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["event_id"], name: "index_event_attachments_on_event_id"
-  end
-
   create_table "orders", force: :cascade do |t|
     t.integer  "user_id"
     t.float    "total"
