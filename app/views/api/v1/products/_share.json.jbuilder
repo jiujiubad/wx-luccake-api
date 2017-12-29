@@ -1,1 +1,0 @@
-json.products product.each{}
