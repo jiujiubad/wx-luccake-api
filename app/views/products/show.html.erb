@@ -37,7 +37,11 @@
   <div class="row">
     <div class="col-md-12">
       <div class="col-md-9 ckeditor">
-        <%= simple_format(@product.detail) %>
+        <% if @product.detail.present? %>
+          <%= simple_format(@product.detail) %>
+        <% else %>
+          <%= image_tag(@product.detail_image.url) %>
+        <% end %>
       </div>
     </div>
   </div>
