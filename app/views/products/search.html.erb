@@ -11,7 +11,11 @@
           <%= image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
         <% end %>
       <% end %>
-      <%= link_to(render_highlight_content(product, @query_string), admin_product_path(product)) %>
+      <% if render_highlight_content(product, @query_string).blank? %>
+        <%= link_to(product.title, admin_product_path(product)) %>
+      <% else %>
+        <%= link_to(render_highlight_content(product, @query_string), admin_product_path(product)) %>
+      <% end %>
       ¥ <%= product.price %> 元
     </div>
   <% end %>
