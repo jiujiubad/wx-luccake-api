@@ -50,6 +50,12 @@ gem 'mysql2' #服务器数据库
 gem "select2-rails" #表单选择器UI美化
 gem 'awesome_rails_console' #美化rails c显示
 gem 'ckeditor' #图文编辑器
+gem 'ransack'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'seo_helper'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

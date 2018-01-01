@@ -1,0 +1,21 @@
+<% if @products.blank? %>
+  <h3>没有找到您想要的信息...</h3>
+<% else %>
+  <h3>找到 <%= @products.count %> 个符合 "<%= @query_string %>" 的商品</h3>
+  <% @products.each do |product| %>
+    <div class="col-md-3">
+      <%= link_to product_path(product) do %>
+        <% if product.photos.present? %>
+          <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
+        <% else %>
+          <%= image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
+        <% end %>
+      <% end %>
+      <%= link_to(render_highlight_content(product, @query_string), admin_product_path(product)) %>
+      ¥ <%= product.price %> 元
+    </div>
+  <% end %>
+  <div class="text-center">
+    <%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
+  </div>
+<% end %>
