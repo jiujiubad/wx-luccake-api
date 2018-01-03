@@ -24,7 +24,7 @@
 					(<%= current_cart.products.count %>)
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<div class="nav navbar-nav navbar-left">
 		      <%= form_tag search_products_path , :method => :get  do %>
 		      <div class="input-group" id="search-id" >
@@ -37,7 +37,7 @@
 		      </div>
 		      <% end %>
 		    </div>
-			</li>
+			</li> -->
 			<% if !current_user %>
 				<li><%= link_to("注册", new_user_registration_path) %></li>
 				<li><%= link_to(content_tag(:i, '登录', class:"fa fa-sign-in"), new_user_session_path) %></li>
