@@ -2,7 +2,8 @@ class Api::V1::ProductsController < ApiController
   before_action :validate_search_key, only: [:search]
 
   def index
-    @products = Product.includes(:categories, :photos).all
+    @search = Product.ransack(params[:q])
+    @products = @search.result.includes(:categories, :photos).paginate(:page => params[:page], :per_page => 8 )
   end
 
   def show
