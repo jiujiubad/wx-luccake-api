@@ -2,7 +2,8 @@ class ProductsController < ApplicationController
   before_action :validate_search_key, only: [:search]
 
   def index
-    @products = Product.all
+    @search = Product.ransack(params[:q])
+    @products = @search.result
   end
 
   def show
@@ -21,6 +22,7 @@ class ProductsController < ApplicationController
 
   def search
     if @query_string.present?
+      @search = Product.ransack(params[:q])
       search_result = Product.ransack(@search_criteria).result(:distinct => true)
       @products = search_result.paginate(:page => params[:page], :per_page => 8 )
     end

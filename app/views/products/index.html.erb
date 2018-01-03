@@ -9,11 +9,24 @@
   </button>
   <ul class="dropdown-menu">
     <li>
-
+      <%= sort_link @search, :quantity, "库存排序" %>
+    </li>
+    <li>
+      <%= sort_link @search, :price, "价格排序" %>
+    </li>
+    <li>
+      <%= sort_link @search, :created_at, "时间顺序" %>
     </li>
   </ul>
 </div>
 
+<div class= "search">
+  <%= search_form_for @search do |f| %>
+    <%= f.label :title_cont %>
+    <%= f.search_field :title_cont %>
+    <%= f.submit %>
+  <% end %>
+</div>
 
 <% @products.each do |product| %>
   <div class="col-md-3">
