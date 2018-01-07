@@ -3,7 +3,7 @@
 <%= simple_form_for [:admin, @category] do |f| %>
   <%= render partial:"form", locals:{f: f} %>
   <% if @category.category_image.present? %>
-    <%= image_tag(@category.category_image.thumb.url, class:"thumbnail") %>
+    <%= image_tag(@category.category_image.medium.url, class:"thumbnail") %>
   <% else %>
     <%= image_tag("http://placehold.it/200x100&text=No Pic", class:"thumbnail") %>
   <% end %>
