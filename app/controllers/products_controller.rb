@@ -4,6 +4,12 @@ class ProductsController < ApplicationController
   def index
     @search = Product.ransack(params[:q])
     @products = @search.result.includes(:categories, :photos).paginate(:page => params[:page], :per_page => 8 )
+    if params[:name].present?
+      @category = Category.find_by(:name => params[:name])
+      if @category.present?
+        @products = @category.products.paginate(:page => params[:page], :per_page => 8 )
+      end
+    end
   end
 
   def show
