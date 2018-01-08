@@ -4,6 +4,12 @@ class Api::V1::ProductsController < ApiController
   def index
     @search = Product.ransack(params[:q])
     @products = @search.result.includes(:categories, :photos)
+    if params[:name].present?
+      @category = Category.find_by(:name => params[:name])
+      if @category.present?
+        @products = @category.products
+      end
+    end
   end
 
   def show
