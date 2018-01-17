@@ -3,13 +3,14 @@ class ProductsController < ApplicationController
 
   def index
     @search = Product.ransack(params[:q])
-    @products = @search.result.includes(:categories, :photos).paginate(:page => params[:page], :per_page => 8 )
+    @products = @search.result.includes(:categories, :photos).paginate(:page => params[:page], :per_page => 12 )
     if params[:name].present?
       @category = Category.find_by(:name => params[:name])
       if @category.present?
-        @products = @category.products.paginate(:page => params[:page], :per_page => 8 )
+        @products = @category.products.paginate(:page => params[:page], :per_page => 12 )
       end
     end
+    @suggests = Product.random8
   end
 
   def show

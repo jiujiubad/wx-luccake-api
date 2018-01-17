@@ -1,11 +1,13 @@
+
 <%= form_tag products_path,method: :get do %>
+  <%= label_tag :筛选分类 %>
   <%= text_field_tag :name %>
   <%= submit_tag "确定" %>
 <% end %>
 
 <div class= "search">
   <%= search_form_for @search do |f| %>
-    <%= f.label :title_cont %>
+    <%= f.label :ransack搜索商品 %>
     <%= f.search_field :title_or_description_cont %>
     <%= f.submit %>
   <% end %>
@@ -49,3 +51,19 @@
 <div class="col-md-12 text-center">
   <%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
 </div>
+
+
+<h2 style="margin-top:700px;" class="text-center">随机推荐8个</h2>
+<% @suggests.each do |product| %>
+  <div class="col-md-3">
+    <%= link_to product_path(product) do %>
+      <% if product.photos.present? %>
+        <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
+      <% else %>
+        <%= image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
+      <% end %>
+    <% end %>
+    <%= link_to(product.title, admin_product_path(product)) %>
+    ¥ <%= product.price %> 元
+  </div>
+<% end %>
