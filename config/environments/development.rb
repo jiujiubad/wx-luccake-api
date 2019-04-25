@@ -64,5 +64,13 @@ Rails.application.configure do
     enable_starttls_auto: true,
     user_name: ENV["SEND_CLOUD_USER_NAME"],
     password: ENV["SEND_CLOUD_USER_KEY"]
-    }
+  }
+
+  Sidekiq.configure_server do |config|
+    Sidetiq::Clock.start!
+  end
+
+  Sidekiq.configure_client do |config|
+    config.redis = { :size => 1 }
+  end  
 end

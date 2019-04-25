@@ -56,6 +56,8 @@ gem 'will_paginate-bootstrap'
 gem 'seo_helper'
 gem 'sidekiq'
 gem 'sidetiq'
+gem 'sinatra', require: false
+gem 'slim'
 
 
 group :development, :test do

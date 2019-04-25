@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   root "welcome#index"
+  require 'sidekiq/web'
+  require 'sidetiq/web'
+
+  mount Sidekiq::Web, at: '/sidekiq'
+  # mount Sidetiq::Web, at: '/sidetiq'
 
   resources :products do
     member do

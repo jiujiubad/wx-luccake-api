@@ -20,14 +20,14 @@
 @import url('https://fonts.googleapis.com/earlyaccess/notosanssc.css');
 @import "select2";
 @import "select2-bootstrap";
-
 /*==== Common ====*/
+
 body {
-  overflow-x: hidden; //裁剪内容，超出视窗不显示
-  font-family: 'Noto Sans SC', sans-serif;
-  letter-spacing: 1px;
+   overflow-x: hidden; //裁剪内容，超出视窗不显示
+       font-family: 'Noto Sans SC', sans-serif;
+   letter-spacing: 1px;
   color: #666;
-  .col-center{
+  .col-center {
     float: none;
     margin: 0 auto;
   }
@@ -39,19 +39,22 @@ body {
     transition: 0.5s;
     text-decoration: none;
   }
-  .ckeditor { //图文编辑器
-  margin: 30px auto;
-  font-size: 1.2em;
-  line-height: 1.8em;                   //拉开行高
-  text-align: justify;                  //文本两端对齐
-  img {
-    max-width:100%; height:auto;         //重要样式代码，实现不同大小屏幕下的响应式伸缩
-    border-radius: 6px;                 //为所有图片设置6px的圆角
+  .ckeditor {
+    //图文编辑器
+    margin: 30px auto;
+    font-size: 1.2em;
+    line-height: 1.8em; //拉开行高
+    text-align: justify; //文本两端对齐
+    img {
+      max-width: 100%;
+      height: auto; //重要样式代码，实现不同大小屏幕下的响应式伸缩
+      border-radius: 6px; //为所有图片设置6px的圆角
     }
   }
 }
 
 /*==== box-welcome ====*/
+
 .box-welcome {
   h2 {
     font-size: 24px;
@@ -66,6 +69,7 @@ body {
 }
 
 /*==== intro 轮播图 ====*/
+
 .intro-box {
   .item {
     h3 {
@@ -89,10 +93,11 @@ body {
 }
 
 /*==== story 品牌故事 ====*/
+
 .story-box {
   background-color: #fff;
   text-align: center;
-  padding: 50px 62.5px 50px 62.5px;//位置
+  padding: 50px 62.5px 50px 62.5px; //位置
   h3 {
     font-size: 20px;
     text-align: left;
@@ -113,6 +118,7 @@ body {
 }
 
 /*==== service 服务优势 ====*/
+
 .service-box {
   background-color: #f8f8f8;
   text-align: center;
@@ -135,6 +141,7 @@ body {
 }
 
 /*==== category 商品分类 ====*/
+
 .category-box {
   background-color: #fff;
   text-align: center;
@@ -155,6 +162,7 @@ body {
 }
 
 /*==== 推荐商品 ====*/
+
 .recommend-box {
   background-color: #f8f8f8;
   text-align: center;
@@ -181,6 +189,7 @@ body {
 }
 
 /*==== 用户反馈 ====*/
+
 .feedback-box {
   background-color: #fff;
   text-align: center;
@@ -208,7 +217,6 @@ body {
       width: 13px;
       margin: 0 5px;
       border-radius: 0;
-
       /* 按钮转向45度 */
       -moz-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
@@ -223,6 +231,7 @@ body {
 }
 
 /*==== 合作品牌 ====*/
+
 .brand-box {
   background-color: #f8f8f8;
   text-align: center;
@@ -234,6 +243,7 @@ body {
 }
 
 /*==== 立即购买 ====*/
+
 .push-box {
   background-image: url("start");
   height: 200px;
